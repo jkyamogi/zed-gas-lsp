@@ -5,7 +5,7 @@ Zed extension for Google Apps Script Syntax Highlighting and Intellisense
 #### At project level
 
 ```bash
-pnpm init -y
+pnpm init
 ```
 
 ```bash
