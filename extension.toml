@@ -9,3 +9,6 @@ repository = "https://github.com/jkyamogi/zed-gas-lsp.git"
 [language_servers.google-apps-script]
 name = "Google Apps Script"
 languages = ["Google Apps Script"]
+
+[language_servers.google-apps-script.language_ids]
+"Google Apps Script" = "javascript"
