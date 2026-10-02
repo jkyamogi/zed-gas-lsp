@@ -1,13 +1,10 @@
 [package]
 name = "zed-google-apps-script"
-version = "0.0.1"
-edition = "2026"
+version = "1.0.0"
+edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
 zed_extension_api = "0.7.0"
-
-# [language_servers.google-apps-script.language_ids]
-# "Google Apps Script" = "javascript"
