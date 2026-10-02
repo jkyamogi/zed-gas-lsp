@@ -28,11 +28,11 @@ impl zed::Extension for GoogleAppsScriptExtension {
     // give TypeScript servers extra config so they prefer the GAS types
     fn language_server_workspace_configuration(
         &mut self,
-        _language_server_id: &LanguageServerId,
+        language_server_id: &LanguageServerId,
         _worktree: &zed::Worktree,
     ) -> Result<Option<zed::serde_json::Value>> {
         // enforce idempotency -> ensure types are present
-        let _ = ensure_types_installed(&LanguageServerId("google-apps-script".into()));
+        let _ = ensure_types_installed(language_server_id);
 
         Ok(Some(json!({
             "javascript": {
@@ -56,7 +56,7 @@ impl zed::Extension for GoogleAppsScriptExtension {
 fn ensure_types_installed(language_server_id: &LanguageServerId) -> Result<()> {
     let latest = zed::npm_package_latest_version(TYPES_PACKAGE)?;
 
-    let latest = zed::npm_package_installed_version(TYPES_PACKAGE)?;
+    let installed = zed::npm_package_installed_version(TYPES_PACKAGE)?;
 
     if installed.as_ref() == Some(&latest) {
         return Ok(());
