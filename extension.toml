@@ -1,9 +1,9 @@
 id = "google-apps-script"
 name = "Google Apps Script"
-version = "0.0.1"
+version = "1.0.0"
 schema_version = 1
-authors = ["Jonathan Kyamogi jonathankyamogi@gmail.com"]
-description = "Syntax highlighting and Intellisense for Google Apps Script"
+authors = ["Jonathan Kyamogi"]
+description = "Google Apps Script support"
 repository = "https://github.com/jkyamogi/zed-gas-lsp.git"
 
 [language_servers.google-apps-script]
