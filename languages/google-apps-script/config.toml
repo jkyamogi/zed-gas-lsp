@@ -1,6 +1,6 @@
 name = "Google Apps Script"
 grammer = "javascript"
 path_suffixes = ["gs"]
-line_comments = ["//"]
+line_comments = ["// "]
 tab_size = 2
 hard_tabs = false
