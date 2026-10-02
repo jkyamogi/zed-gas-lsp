@@ -1,0 +1,23 @@
+.DS_Store
+.env
+build
+node_modules
+
+# Package managers / lockfiles (adjust based on your preference)
+bun.lockb
+package-lock.json
+.pnpm-store/
+yarn.lock
+
+# Zed extension CLI & build artifacts
+zed-extension
+*.wasm
+
+# Directories used by the Zed Extension CLI
+/scratch
+/output
+
+# Rust / Cargo (if building a WASM extension in Rust)
+Target/
+Cargo.lock
+*.pdb
