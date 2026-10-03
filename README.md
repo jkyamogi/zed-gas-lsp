@@ -1,2 +1,3 @@
-# Zed G.A.S. LSP
-Zero config Zed extension for Google Apps Script Syntax Highlighting and Intellisense
+# Google Apps Script Zed Extension
+
+Zero config Zed language extension for Google Apps Script.
